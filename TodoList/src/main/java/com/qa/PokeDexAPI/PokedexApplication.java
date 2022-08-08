@@ -1,4 +1,4 @@
-package com.qa.ToDoListAPI;
+package com.qa.PokeDexAPI;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
