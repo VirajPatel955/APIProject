@@ -1,4 +1,4 @@
-package com.qa.model;
+package com.qa.PokeDexAPI.model;
 
 import java.util.Objects;
 
@@ -36,7 +36,7 @@ public class PokeDex {
     
     public PokeDex(String pokemon, String description, boolean caught) {
     	this.pokemon = pokemon;
-    	this.description =description;
+    	this.description = description;
     	this.caught = caught;
     }
     
