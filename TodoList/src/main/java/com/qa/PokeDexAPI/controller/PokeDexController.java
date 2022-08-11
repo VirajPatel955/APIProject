@@ -22,7 +22,7 @@ import com.qa.PokeDexAPI.repo.PokeDexRepo;
 import com.qa.PokeDexAPI.service.PokeDexService;
 
 @RestController
-@RequestMapping ("/home")
+@RequestMapping ("/pokedex")
 public class PokeDexController {
 	
 
@@ -40,8 +40,11 @@ public class PokeDexController {
 	@GetMapping("/GetPokemon")
 	public ResponseEntity<List<PokeDex>> getPokeDex(){
 		List<PokeDex> pokemonData = this.service.readAllPokemon();
-	
 		return new ResponseEntity<List<PokeDex>>(pokemonData, HttpStatus.OK);
+	}
+	@GetMapping("/GetPokemon/{dex_id}")
+		public ResponseEntity<PokeDex> ReadPokeDex(@PathVariable Long dex_id){
+			return ResponseEntity.ok(this.service.ReadPokeDex(dex_id));
 	}
 	public List<PokeDex> findAll(){
 		return pokedexrepo.findAll();

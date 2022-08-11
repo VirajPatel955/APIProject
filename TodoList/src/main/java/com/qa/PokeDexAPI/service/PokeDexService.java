@@ -34,6 +34,7 @@ public class PokeDexService {
     public List<PokeDex> readAllPokemon() {
 		return this.repo.findAll();
 	}
+    
 	
 	//Update
 	public PokeDex updatePokeDex(PokeDex updatePokeDex, Long dex_id ) {
@@ -68,6 +69,8 @@ public class PokeDexService {
 		
 		
 	}
+
+	
 }
 
 
