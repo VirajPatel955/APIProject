@@ -55,7 +55,7 @@ public class PokeDexControllerUnitTest {
 		Mockito.verify(this.service, Mockito.times(1)).addPokemon(testEntry);
 	}
 	
-   @Test	
+   //@Test	
 	
 	
 
