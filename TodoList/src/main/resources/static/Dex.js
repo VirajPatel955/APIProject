@@ -83,19 +83,16 @@
 //             })
     
 //         });
-        
+    
+const GetPokemon =() => {
 const url = "http://localhost:8086/pokedex";
-const GetPokemon = () => {
 	
 	fetch(`${url}/GetPokemon`)
-            .then(function (response) {
-                return response.json();
+            .then((res) => {
+                return res.json();
             })
-            .then(function (data) {				
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
+            .then((data) => {				
+                console.log(data);
             });
         };
 
