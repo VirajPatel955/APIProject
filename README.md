@@ -1,5 +1,7 @@
 # PokeDex
 
+https://trello.com/invite/b/wpJ9GOZx/6df7b91df0ddcd0c826952396c1c49a0/pokedex-api-project
+
 #Creating an API using SpringBoot with CRUD functions that would be able to add, update, read and delete Pokemon to the PokeDex.
 #read will lsit all the Pokemon, you are able to update and/or delete via Dex ID and able to add Pokemon to the PokeDex.
 
