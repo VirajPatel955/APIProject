@@ -5,9 +5,11 @@ import java.util.List;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +26,7 @@ import com.qa.PokeDexAPI.service.PokeDexService;
 @RestController
 @RequestMapping ("/pokedex")
 public class PokeDexController {
-	
+	 
 
 	@Autowired
 	PokeDexService service;
@@ -75,5 +77,6 @@ public class PokeDexController {
 		return new ResponseEntity<Boolean>(HttpStatus.NO_CONTENT);
 //				: new ResponseEntity<Boolean>(HttpStatus.NOT_FOUND);		
 	}
+	
 	
 }
