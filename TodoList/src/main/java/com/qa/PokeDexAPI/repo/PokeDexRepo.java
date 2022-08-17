@@ -14,7 +14,7 @@ public interface PokeDexRepo extends JpaRepository<PokeDex, Long>  {
 	@Query(value ="SELECT * pokedexdb", nativeQuery = true)
 	public List<PokeDex> allFromPokeDex();
 	
-	@Query(value ="SELECT * FROM pokededb where pokemon = ?", nativeQuery = true)
+	@Query(value ="SELECT * FROM pokedexdb where pokemon = ?", nativeQuery = true)
 	public List<PokeDex> samePokemonSelect(String pokemon);
 	
 }
