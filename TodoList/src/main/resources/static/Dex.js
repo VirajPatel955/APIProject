@@ -93,6 +93,13 @@ const url = "http://localhost:8086/pokedex";
             })
             .then((data) => {				
                 console.log(data);
+                const pokedex = {};
+                pokedex['pokemon'] = data.pokemon;
+                pokedex['dex_id'] = data.dex_id;
+                pokedex['description'] = data.description;
+                pokedex['caught'] = data.caught;
+                
+                console.log(pokemon);
             });
         };
 
