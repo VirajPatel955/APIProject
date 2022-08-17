@@ -17,7 +17,7 @@ Need IDE for Javascript, HTML and CSS can use Visual Studio Code
 
 ###Deployment
 
-On Java Eclipse run the SpringBoot Application, and input LocalHost:8086 to load the web page
+On Java Eclipse run the SpringBoot Application, and input localhost:8086 in browser to load the web page
 
 ###Built With
 
