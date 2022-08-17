@@ -53,10 +53,13 @@ public class PokeDexServiceUnitTest {
 		
 	}
 	
-	@Test
-	public void deletePokeDex_ValidId_deletePokeDex() {
-		
-	}
+//	@Test
+//	public void deletePokeDex_ValidId_deletePokeDex() {
+//		Long testDex_id = 1L;
+//		
+//		
+//				
+//	}
 	
 
 }
